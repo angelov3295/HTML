@@ -6,7 +6,7 @@
   font-weight: lighter;
   list-style: none;
   text-decoration: none;
-  background-color: black;
+  background-color: white;
 }
 
 nav{
@@ -17,11 +17,11 @@ nav{
   background-color: black;
 }
 
-.nav{
+.nav-list{
   display: flex;
   justify-content: space-around;
   width: 30%;
-
+  align-items: center;
 }
 
 nav img{
