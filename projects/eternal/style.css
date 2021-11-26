@@ -22,6 +22,11 @@ nav{
   justify-content: space-between;
   width: 30%;
   align-items: center;
+  color: white;
+}
+
+.nav-list a {
+  color: White;
 }
 
 nav img{
@@ -32,11 +37,16 @@ nav img{
 }
 
 .content{
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex direction: row ;
+  padding: 10% 20% 20% 20%;
+  justify-content: space-around;
+  background: gray;
+  width: 100%;
+  height: auto;
 }
 
-.content *{
+.content col{
   flex-basis: 100%;
 }
 
@@ -49,6 +59,6 @@ nav img{
   font-size: 20px;
 }
 
-.body col{
-
+.col {
+  border-radius: 10px;
 }
