@@ -76,6 +76,7 @@ body {
 
 .flex-container .flex-card .img-container {
     max-width: 500px;
+    min-width: 500px;
 }
 
 .flex-container .flex-card .img-container img {
@@ -83,14 +84,36 @@ body {
     border-radius: 15px 0 0 15px;
 }
 
+.card-text{
+  text-align: center;
+}
+
 .card {
   background: white;
   width: 220px;
-  height: 400px;
+  height: ;
   margin: 10px;
   border-radius: 15px;
 }
 
+.card p {
+  padding: 10px;
+  font-size: 10px;
+}
+
+.card h2 {
+  padding: 10px;
+  text-align: center;
+}
+
+.card a{
+  background: black;
+  color: white;
+  padding: 10px 10px;
+  display: block;
+  text-align: center;
+  margin: 10px 10px;
+}
 
 .card-image{
   background-color: grey;
