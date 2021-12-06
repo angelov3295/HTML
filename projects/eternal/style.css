@@ -45,16 +45,38 @@ body {
   background-color: rgb(27,27,27);
 }
 
-.gallery{
+//*.titel {
+  max-width: 1000px;
+  height: 50px;
+  background-color: #FF007F;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+*//
+
+
+.gallery{
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap ;
+  padding: px;
+  justify-content: space-around;
+}
+
+.gallery .item{
+  max-width: 300px;
+  height: auto;
   padding: 5px;
-  justify-content: space-evenly;
 }
 
 .container{
   display: flex;
   justify-content: center;
+  min-width: 1000px;
 }
 
 .flex-container {
@@ -68,7 +90,7 @@ body {
 .flex-container .flex-card{
   position: relative;
   max-width: 1000px;
-  background: white;
+  background-color: rgba(255, 255, 255, 0.3);
   margin:10px;
   display: flex;
   border-radius: 15px;
@@ -86,13 +108,14 @@ body {
 
 .card-text{
   text-align: center;
+  color: white;
 }
 
 .card {
   background: white;
   width: 220px;
   height: ;
-  margin: 10px;
+  margin: 30px;
   border-radius: 15px;
 }
 
@@ -121,6 +144,50 @@ body {
   margin-bottom: 15px;
   background-size: cover;
   border-radius: 15px 15px 0 0 ;
+}
+
+.contact{
+  display: grid;
+  justify-content: center;
+  font-size: 20px;
+  background-color: rgb(27,27,27);
+}
+
+.contact-card{
+  background: white;
+  width: 1000px;
+  min-height: 300px;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+.contact-card h2{
+  text-align: center;
+}
+
+.social-row {
+  background: white;
+  width: 1000px;
+  height: 100px;
+  margin: 10px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-item {
+  margin: 10px 0 0;
+  padding:;
+  background-color: ;
+  opacity: 100%;
+  max-height: 80px;
+  max-width: 180px;
+  border-radius: 15px;
+}
+
+.social-item img{
+  max-width: 80px;
+  max-height: 80px;
 }
 
 .car-1 {
