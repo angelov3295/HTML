@@ -38,38 +38,27 @@ body {
   background-color: rgb(27,27,27);
 }
 
-.body {
+
+/*.body {
   display: flex;
-  justify-content: center;
+  align-content: center;
+  max-width: 1000px;
   font-size: 20px;
   background-color: rgb(27,27,27);
 }
-
-//*.titel {
-  max-width: 1000px;
-  height: 50px;
-  background-color: #FF007F;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 15px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-*//
-
+*/
 
 .gallery{
+  margin: 0 0 0 250px;
   max-width: 1000px;
+  min-height: 500px
   display: flex;
-  flex-wrap: wrap ;
-  padding: px;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .gallery .item{
   max-width: 300px;
-  height: auto;
+  max-height: auto;
   padding: 5px;
 }
 
@@ -80,17 +69,15 @@ body {
 }
 
 .flex-container {
-  position: relative;
   width: 1000px;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap ;
+  justify-content: center;
 }
 
 .flex-container .flex-card{
-  position: relative;
   max-width: 1000px;
-  background-color: rgba(255, 255, 255, 0.3);
+  /*background-color: rgba(255, 255, 255, 0.3);*/
   margin:10px;
   display: flex;
   border-radius: 15px;
