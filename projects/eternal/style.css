@@ -2,10 +2,11 @@
   margin:0;
   padding:0;
   font-family: sans-serif;
-  font-weight: lighter;
+  font-weight: bold;
   list-style: none;
   text-decoration: none;
   background-color: ;
+  text-align: center;
 }
 
 nav{
@@ -26,12 +27,49 @@ nav{
 .nav-list a {
   color: White;
 }
+.nav-list :hover {
+  color: grey;
+}
 
 nav img{
   width: 50px;
   height: 50px;
   top: 17px;
   left: 12%;
+}
+
+.nav-logo{
+  cursor: pointer;
+  transform: rotate(0deg);
+  transition: transform var();
+}
+
+.nav-logo:hover{
+  animation: nav-logo 0.2s ease alternate;
+  transform: rotate(-90deg);
+}
+
+@keyframes nav-logo {
+  from{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(1.5);
+  }
+}
+
+.titel{
+  background: white;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  margin:15px;
+}
+
+.titel h2{
+  text-align: center;
+  margin: 10px;
 }
 
 body {
@@ -44,22 +82,25 @@ body {
   justify-content: center;
   font-size: 20px;
   background-color: rgb(27,27,27);
+  max-width: auto;
 }
 
 
 .gallery{
-  margin: 0 0 0 250px;
+  /*margin: 0 0 0 250px;*/
   max-width: 1000px;
   min-height: 500px
   display: flex;
-  justify-content: center;
+  align-items: center;
 }
 
 .gallery .item{
   max-width: 300px;
   max-height: auto;
-  padding: 5px;
+  margin: 10px;
 }
+
+
 
 .container{
   display: flex;
@@ -69,11 +110,13 @@ body {
 
 .flex-container {
   max-width: 1000px;
+  margin-top: 10px;
+  height:;
 }
 
 .flex-container .flex-card{
   max-width: 1000px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color:white /*rgba(255, 255, 255, 0.3)*/;
   margin:10px;
   display: flex;
   border-radius: 15px;
@@ -85,13 +128,18 @@ body {
 }
 
 .flex-container .flex-card .img-container img {
+    min-height: 350px;
     max-width: 100%;
     border-radius: 15px 0 0 15px;
 }
 
-.card-text{
+.card-text h2 {
   text-align: center;
-  color: white;
+  color: black;
+}
+
+.card-text p{
+  text-align: center;
 }
 
 .card {
@@ -102,9 +150,24 @@ body {
   border-radius: 15px;
 }
 
+.container :hover{
+  animation: card 0.1s ease-out alternate;
+}
+
+@keyframes card {
+  from{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(1.1);
+  }
+}
+
 .card p {
   padding: 10px;
-  font-size: 10px;
+  font-size: 15px;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .card h2 {
@@ -145,12 +208,17 @@ body {
 }
 
 .contact-card h2{
+    margin-bottom: 10px;
+}
+
+.contact-card p{
   text-align: center;
+  padding-top: 10px;
 }
 
 .social-row {
   background: white;
-  width: 1000px;
+  max-width: 1000px;
   height: 100px;
   margin: 10px;
   border-radius: 15px;
@@ -176,3 +244,10 @@ body {
 .car-1 {
   background-image: url('images/10.jpg');
 }
+
+@media screen and (max-width: 600px) {
+  .nav-list a:not(:first-child) {display: none;}
+  .nav-list a.icon {
+    float: right;
+    display: block;
+  }
