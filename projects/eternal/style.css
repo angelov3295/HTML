@@ -133,9 +133,24 @@ body {
     border-radius: 15px 0 0 15px;
 }
 
-.card-text h2 {
+.gallery  :hover{
+  animation: item 0.1s ease;
+}
+
+@keyframes item {
+  from{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(1.2);
+  }
+}
+
+.flex-card h2 {
   text-align: center;
   color: black;
+  align-items: center;
+  align-content: center;
 }
 
 .card-text p{
@@ -166,6 +181,7 @@ body {
 .card p {
   padding: 10px;
   font-size: 15px;
+  display: block;
   text-align: center;
   vertical-align: middle;
 }
